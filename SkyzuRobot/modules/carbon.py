@@ -27,9 +27,9 @@ async def carbon_func(_, message):
 @pbot.on_message(filters.command("repo"))
 async def repo(_, message):
     await message.reply_text(
-        f"""✨ **Hey I'm Skyzu Robot** 
+        f"""✨ **Hey I'm Kanata** 
 
-**Owner repo : [Skyzu](https://t.me/skyzu)**
+**Owner repo : [Ako](https://t.me/erosei_1)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -41,9 +41,9 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="https://github.com/Skyzu/SkyzuRobot"), 
+                        "Repo", url="https://t.me/erosei_1"), 
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/skyzusupport")
+                        "Support", url="https://t.me/Alvin_Image_Editor_Group")
                 ]
             ]
         ),
