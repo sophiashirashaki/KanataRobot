@@ -790,7 +790,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Skyzu Robot Started!**
+                f"""**Kanata Robot Started!**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
