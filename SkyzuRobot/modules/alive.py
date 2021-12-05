@@ -9,16 +9,16 @@ from SkyzuRobot.events import register
 from SkyzuRobot import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/d514aee7158c5f234a546.jpg"
+PHOTO = "https://telegra.ph/file/f3027484f14646e94a53a.jpg"
 
 @register(pattern=("/alive"))
 async def awake(event):
   TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Kanata.** \n\n"
-  TEXT += "⚪ **I'm Working Properly** \n\n"
-  TEXT += f"⚪ **My Master : [Ako](https://t.me/erosei_1)** \n\n"
-  TEXT += f"⚪ **Library Version :** `{telever}` \n\n"
-  TEXT += f"⚪ **Telethon Version :** `{tlhver}` \n\n"
-  TEXT += f"⚪ **Pyrogram Version :** `{pyrover}` \n\n"
+  TEXT += "🔴 **I'm Working Properly** \n\n"
+  TEXT += f"🔴 **My Master : [Ako](https://t.me/erosei_1)** \n\n"
+  TEXT += f"🔴 **Library Version :** `{telever}` \n\n"
+  TEXT += f"🔴 **Telethon Version :** `{tlhver}` \n\n"
+  TEXT += f"🔴 **Pyrogram Version :** `{pyrover}` \n\n"
   TEXT += "**Thanks For Adding Me Here ❤️**"
   BUTTON = [[Button.url("ʜᴇʟᴘ​", "https://t.me/Kanatapro_bot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ​", "https://t.me/Alvin_Image_Editor_Group")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
