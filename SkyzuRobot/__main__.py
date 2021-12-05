@@ -92,7 +92,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Kanata", callback_data="emiko_"),
+        InlineKeyboardButton(text="About Kanata", callback_data="Skyzu_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -102,7 +102,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Kanata To Your Group ➗", url="t.me/EmiexRobot?startgroup=new"),
+            text="➗ Add Kanata To Your Group ➗", url="t.me/Kanatapro_bot?startgroup=new"),
     ],
 ]
 
