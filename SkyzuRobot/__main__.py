@@ -84,7 +84,7 @@ PM_START_TEXT = """
 *Hello {} !*
 ────────────────────────
 ✪ I'm a bot with the V-tuber Kanata theme to help organize your group.
-✪ Maintained by @erosei_1 [✨](https://telegra.ph/file/d514aee7158c5f234a546.jpg)
+✪ Maintained by @erosei_1 ✨
 ────────────────────────
 Hit the /help to see available command.
 """
