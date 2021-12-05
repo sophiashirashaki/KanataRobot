@@ -115,7 +115,7 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     ubot_state = "Dead" if not await ubot2.get_me() else "Alive"
     buttons.add(
-        InlineKeyboardButton("Main bot", url="https://t.me/EmiexRobot"),
+        InlineKeyboardButton("Main bot", url="https://t.me/Kanatapro_bot"),
         InlineKeyboardButton(
             "Go Inline!", switch_inline_query_current_chat=""
         ),
@@ -434,7 +434,7 @@ async def tg_search_func(answers, text, user_id):
 
 async def music_inline_func(answers, query):
     chat_id = -1001445180719
-    group_invite = "https://t.me/joinchat/vSDE2DuGK4Y4Nzll"
+    group_invite = "https://telegra.ph/file/f3027484f14646e94a53a.jpg"
     try:
         messages = [
             m
