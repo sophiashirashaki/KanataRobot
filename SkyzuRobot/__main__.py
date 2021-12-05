@@ -114,7 +114,9 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-Click on the button bellow to get description about specifics command."""
+Click on the button bellow to get description about specifics command.
+
+If you find a bug in this bot, please report it to the support group!!"""
 
 EMI_IMG = "https://telegra.ph/file/d514aee7158c5f234a546.jpg"
 
