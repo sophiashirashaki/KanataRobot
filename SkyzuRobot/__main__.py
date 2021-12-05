@@ -82,36 +82,30 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
+✪ I'm an V-tuber theme management bot [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
 ────────────────────────
-✪ I'm a bot with the V-tuber Kanata theme to help organize your group.
-✪ Maintained by @erosei_1 ✨
+× *Uptime:* `{}`
+× `{}` *users, across* `{}` *chats.*
 ────────────────────────
-Hit the /help to see available command.
+✪ Hit /help to see my available commands.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="Help & Command​", callback_data="help_back"),
+        InlineKeyboardButton(text="About Kanata", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="About Kanata", callback_data="Skyzu_"),
+        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try Inline​", switch_inline_query_current_chat=""
+            text="Try inline!​​", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text="Owner​", url="https://t.me/erosei_1"
-        ),
-        InlineKeyboardButton(
-            text="Support​", url=f"https://t.me/{SUPPORT_CHAT}"
-        ),
-    ],
-    [
-        InlineKeyboardButton(
-            text="➗ Add Kanata To Your Group​ ➗", url="t.me/Kanatapro_bot?startgroup=new"),
+            text="➗ Add Kanata To Your Group ➗", url="t.me/EmiexRobot?startgroup=new"),
     ],
 ]
+
 
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command.
