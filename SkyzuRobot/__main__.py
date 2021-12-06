@@ -463,7 +463,7 @@ def Skyzu_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Skyzu", url="t.me/erosei_1"),
+                    InlineKeyboardButton(text="Ako", url="t.me/erosei_1"),
                  ],
                  [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
