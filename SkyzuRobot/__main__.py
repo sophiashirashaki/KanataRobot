@@ -457,7 +457,7 @@ def Skyzu_about_callback(update, context):
 
     elif query.data == "Skyzu_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Skyzu</b>\n"
+            text=f"<b>๏ Credis for Kanata</b>\n"
             f"\nHere Developers Making The Kanata",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
