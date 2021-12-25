@@ -484,9 +484,13 @@ def Source_about_callback(update, context):
             "\n • `/resume` - To resuming the playback You've paused."
             "\n • `/skip` - To skipping the player."
             "\n • `/end` - For end the playback."
+            "\n • `userbotjoin` - To add userbot to the group."
+            "\n • `/userbotleave` - To remove bots from the group."
             "\n • `/musicplayer <on/off>` - Toggle for turn ON or turn OFF the musicplayer."
             "\n\n๏ Command for all members."
-            "\n • `/play` <query /reply audio> - Playing music via YouTube."
+            "\n • `/mplay` <query or reply audio> - Playing music via YouTube."
+            "\n • `/vplay` <query or reply video> - Playing video via YouTube."
+            "\n • `/vstream` <link steram via YouTube> - Playing video stream via YouTube."
             "\n • `/playlist` - To playing a playlist of groups or your personal playlist",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
