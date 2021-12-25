@@ -742,7 +742,7 @@ def donate(update: Update, context: CallbackContext):
         if OWNER_ID != 1606221784:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
-                "[My Channel]({})".format(DONATION_LINK),
+                "[My Channel](https://t.me/projectsupdates)".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
     else:
