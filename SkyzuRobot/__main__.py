@@ -87,8 +87,8 @@ PM_START_TEXT = """
 *✪ I'm V-tuber Theme group management bot*
 *✪ I've some features for you :)*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-• *Uptime:* {}
-• {} *users, across* {} *chats.*
+• *Uptime:* `{}`
+• `{}` *users, across* `{}` *chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ Find the list of available commands with /help ××
 """
@@ -489,7 +489,7 @@ def Source_about_callback(update, context):
             "\n • `/end` - For end the playback."
             "\n • `userbotjoin` - To add userbot to the group."
             "\n • `/userbotleave` - To remove bots from the group."
-            "\n • `/musicplayer <on/off>` - Toggle for turn ON or turn OFF the musicplayer."
+            "\n • `/mutemusic or /unmutemusic` - Toggle for turn ON or turn OFF the musicplayer."
             "\n\n๏ Command for all members."
             "\n • `/mplay` <query or reply audio> - Playing music via YouTube."
             "\n • `/vplay` <query or reply video> - Playing video via YouTube."
