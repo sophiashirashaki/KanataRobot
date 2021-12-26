@@ -81,13 +81,16 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello {} !*
-✪ I'm an V-tuber theme management bot [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
-────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
-────────────────────────
-✪ Hit /help to see my available commands.
+──「 Kanatqv 」──
+
+Yahoooo! Ako,
+I'm Anime themed group management bot
+I've some features for you :)
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+• Uptime: 8h:31m:23s
+• 5240 users, across 85 chats.
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+➛ Find the list of available commands with /help ××
 """
 
 buttons = [
