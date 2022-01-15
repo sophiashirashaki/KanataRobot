@@ -4,7 +4,7 @@
 
 <h4><p align="center"> Kanata Bot </p></h4>
 
-<p align="center">[Kanata Robot](https://t.me/Kanatapro_bot) is a modular bot running on python3 with anime theme and have a lot features.</p>
+<p align="center">Kanata Bot is a modular bot running on python3 with anime theme and have a lot features.</p>
 
 <p align="center">
 <a href="https://t.me/Kanatapro_bot"> <img src="https://img.shields.io/badge/Kanata-Probot-blue?&logo=telegram" alt="Kanata on Telegram" /> </a><br>
