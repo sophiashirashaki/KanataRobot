@@ -379,15 +379,16 @@ def Skyzu_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ᴀᴅᴍɪɴs​", callback_data="Skyzu_admin"),
-                    InlineKeyboardButton(text="ɴᴏᴛᴇs​", callback_data="Skyzu_notes"),
+                    InlineKeyboardButton(text="Admins", callback_data="Skyzu_admin"),
+                    InlineKeyboardButton(text="Notrs​", callback_data="Skyzu_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", callback_data="Skyzu_support"),
-                    InlineKeyboardButton(text="ᴄʀᴇᴅɪᴛs​", callback_data="Skyzu_credit"),
+                    InlineKeyboardButton(text="Support​", callback_data="Skyzu_support"),
+                    InlineKeyboardButton(text="T & C​", callback_data="Skyzu_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="ᴍᴜsɪᴄᴘʟᴀʏᴇʀ​", callback_data="source_"),
+                    InlineKeyboardButton(text="Music Player​", callback_data="source_"),
+                    InlineKeyboardButton(text="Owner Info", url="t.me/erosei_1/3")
                  ],
                  [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_back"),
@@ -460,19 +461,44 @@ def Skyzu_about_callback(update, context):
 
     elif query.data == "Skyzu_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Kanata</b>\n"
-            f"\nHere Developers Making The Kanata",
+            text=f"<b> *｢ Terms and Conditions 」*</b>\n"
+            f"\nTo Use Kanata, You Need To Read Terms and Conditions Carefully.",
+            "\n\n✪ Watch your group, if someone spamming your group, you can use report feature from your Telegram Client."
+            "\n✪ Make sure antiflood is enabled, so nobody can Flood/Spam your group."
+            "\n✪ Do not spam commands, button, or anything in bot PM, else you will be *Gbanned*."
+            "\n✪ If you need to ask anything abouy this bot, Go @AkoUpdate."
+            "\n✪ If you asking nonsense in Support Chat, you will get Warned/Banned."
+            "\n✪ Sharing any files/videos others than about bot in Support Chat is prohibited."
+            "\n✪ Sharing NSFW in Support Chat,will reward you GBAN and reported to Telegram as well."
+            "\n\nFor any kind of help, related to this bot, Join @AkoUpdate."
+            "\n\n_Terms & Conditions will be changed anytime_"
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Ako", url="t.me/erosei_1"),
+                    InlineKeyboardButton(text="Credits", callback_data=credit_kanata"),
                  ],
                  [
-                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
-                 
-                 ]
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_")
                 ]
+               ]
+            ),
+        )
+
+
+    elif query.data == "credit_kanata"
+        query.massage.edit.text(
+            text=f<b> *Kanata Is A Powerful Bot For Managing Groups With Additional Features.*</b>\n
+            "\n\nFork of [SkyzuRobot](githublink)"
+            "\n\n_Kanata's licensed under the GNU General Public License v3.0_"
+            "\n\nIf Any Question About Asuna Yuuki, Let Us Know At @AkoUpdate."
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Back", callback_data=Skyzu_credit"),
+                ]
+               ]
             ),
         )
 
@@ -487,7 +513,7 @@ def Source_about_callback(update, context):
             "\n • `/resume` - To resuming the playback You've paused."
             "\n • `/skip` - To skipping the player."
             "\n • `/end` - For end the playback."
-            "\n • `userbotjoin` - To add userbot to the group."
+            "\n • `/userbotjoin` - To add userbot to the group."
             "\n • `/userbotleave` - To remove bots from the group."
             "\n • `/mutemusic or /unmutemusic` - Toggle for turn ON or turn OFF the musicplayer."
             "\n\n๏ Command for all members."
