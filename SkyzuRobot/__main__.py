@@ -98,7 +98,7 @@ buttons = [
         InlineKeyboardButton(text="About Kanata", callback_data="Skyzu_"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="❔Help", callback_data="help_back"),
         InlineKeyboardButton(
             text="Try inline!​​", switch_inline_query_current_chat=""
         ),
