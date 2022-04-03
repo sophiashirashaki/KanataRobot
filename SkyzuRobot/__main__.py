@@ -380,7 +380,7 @@ def Skyzu_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Admins", callback_data="Skyzu_admin"),
-                    InlineKeyboardButton(text="Notrs​", callback_data="Skyzu_notes"),
+                    InlineKeyboardButton(text="Notes​", callback_data="Skyzu_notes"),
                  ],
                  [
                     InlineKeyboardButton(text="Support​", callback_data="Skyzu_support"),
@@ -456,7 +456,7 @@ def Skyzu_about_callback(update, context):
                  ]
                 ]
             ),
-        )
+        )   
 
 
     elif query.data == "Skyzu_credit":
@@ -472,7 +472,7 @@ def Skyzu_about_callback(update, context):
             "\n✪ Sharing NSFW in Support Chat,will reward you GBAN and reported to Telegram as well."
             "\n\nFor any kind of help, related to this bot, Join @AkoUpdate."
             "\n\n_Terms & Conditions will be changed anytime_"
-            parse_mode=ParseMode.HTML,
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
@@ -483,8 +483,7 @@ def Skyzu_about_callback(update, context):
                 ]
                ]
             ),
-        )
-
+        )   
 
     elif query.data == "credit_kanata"
         query.massage.edit.text(
@@ -494,11 +493,7 @@ def Skyzu_about_callback(update, context):
             "\n\nIf Any Question About Asuna Yuuki, Let Us Know At @AkoUpdate."
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Back", callback_data=Skyzu_credit"),
-                ]
-               ]
+                [[InlineKeyboardButton(text="Back​", callback_data="credit_kanata")]]
             ),
         )
 
