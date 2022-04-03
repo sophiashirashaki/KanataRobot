@@ -488,7 +488,7 @@ def Skyzu_about_callback(update, context):
     elif query.data == "credit_kanata"
         query.massage.edit.text(
             text=f<b> *Kanata Is A Powerful Bot For Managing Groups With Additional Features.*</b>\n
-            "\n\nFork of [SkyzuRobot](githublink)"
+            "\n\nFork of [SkyzuRobot](https://github.com/Skyzu/SkyzuRobot)"
             "\n\n_Kanata's licensed under the GNU General Public License v3.0_"
             "\n\nIf Any Question About Asuna Yuuki, Let Us Know At @AkoUpdate."
             parse_mode=ParseMode.HTML,
