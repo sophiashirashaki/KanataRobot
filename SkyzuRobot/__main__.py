@@ -477,13 +477,12 @@ def Skyzu_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Credits", callback_data=credit_kanata"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_")
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
                 ]
                ]
             ),
         )   
+
 
     elif query.data == "credit_kanata"
         query.massage.edit_text(
