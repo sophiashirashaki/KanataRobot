@@ -447,7 +447,7 @@ def Skyzu_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="t.me/Alvin_Image_Editor_Group"),
+                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=https:/'t.me/AkoUpdate"),
                     InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/projectsupdates"),
                  ],
                  [
@@ -471,8 +471,8 @@ def Skyzu_about_callback(update, context):
             "\n✪ Sharing any files/videos others than about bot in Support Chat is prohibited."
             "\n✪ Sharing NSFW in Support Chat,will reward you GBAN and reported to Telegram as well."
             "\n\nFor any kind of help, related to this bot, Join @AkoUpdate."
-            "\n\n_Terms & Conditions will be changed anytime_"
-            parse_mode=ParseMode.HTML,
+            "\n\n_Terms & Conditions will be changed anytime_",
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
@@ -488,7 +488,7 @@ def Skyzu_about_callback(update, context):
             text=f<b> *Kanata Is A Powerful Bot For Managing Groups With Additional Features.*</b>\n
             "\n\nFork of [SkyzuRobot](https://github.com/Skyzu/SkyzuRobot)"
             "\n\n_Kanata's licensed under the GNU General Public License v3.0_"
-            "\n\nIf Any Question About Asuna Yuuki, Let Us Know At @AkoUpdate."
+            "\n\nIf Any Question About Asuna Yuuki, Let Us Know At @AkoUpdate.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back​", callback_data="credit_kanata")]]
