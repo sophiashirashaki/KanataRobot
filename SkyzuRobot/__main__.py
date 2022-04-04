@@ -476,7 +476,7 @@ def Skyzu_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Credits", callback_data=credit_kanata"),
+                    InlineKeyboardButton(text="Credits", callback_data="credit_kanata"),
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
                 ]
                ]
@@ -485,7 +485,7 @@ def Skyzu_about_callback(update, context):
 
     elif query.data == "credit_kanata"
         query.massage.edit_text(
-            text=f<b> *Kanata Is A Powerful Bot For Managing Groups With Additional Features.*</b>\n
+            text=f"<b> *Kanata Is A Powerful Bot For Managing Groups With Additional Features.*</b>\n"
             "\n\nFork of [SkyzuRobot](https://github.com/Skyzu/SkyzuRobot)"
             "\n\n_Kanata's licensed under the GNU General Public License v3.0_"
             "\n\nIf Any Question About Asuna Yuuki, Let Us Know At @AkoUpdate.",
