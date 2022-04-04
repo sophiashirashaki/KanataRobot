@@ -1,4 +1,4 @@
-import logging
+"import logging
 import os
 import sys
 import json
@@ -34,7 +34,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     LOGGER.error(
         "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot quitting."
     )
-    quit(1)
+    sys.exit(1)
 
 ENV = bool(os.environ.get("ENV", False))
 
@@ -62,7 +62,7 @@ if ENV:
 
     try:
         WOLVES = {int(x) for x in os.environ.get("WOLVES", "").split()}
-    except ValueError: 
+    except ValueError:
         raise Exception("Your whitelisted users list does not contain valid integers.")
 
     try:
@@ -73,6 +73,7 @@ if ENV:
     INFOPIC = bool(os.environ.get("INFOPIC", True))
     BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
+    ERROR_LOGS = os.environ.get("ERROR_LOGS", None)
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # Does not contain token
     PORT = int(os.environ.get("PORT", 5000))
@@ -81,7 +82,11 @@ if ENV:
     API_HASH = os.environ.get("API_HASH", None)
     SESSION_STRING = os.environ.get("SESSION_STRING", None)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
-    DB_URI = os.environ.get("DATABASE_URL")
+    DATABASE_URL = os.environ.get("DATABASE_URL", None)
+    DATABASE_URL = DATABASE_URL.replace(
+        "postgres", "postgresql"
+    )  # Sqlalchemy dropped support for "postgres" name.
+    # https://stackoverflow.com/questions/62688256/sqlalchemy-exc-nosuchmoduleerror-cant-load-plugin-sqlalchemy-dialectspostgre
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     ARQ_API = os.environ.get("ARQ_API", None)
@@ -108,7 +113,7 @@ if ENV:
     CF_API_KEY = os.environ.get("CF_API_KEY", None)
     WELCOME_DELAY_KICK_SEC = os.environ.get("WELCOME_DELAY_KICL_SEC", None)
     BOT_ID = int(os.environ.get("BOT_ID", None))
-    ARQ_API_URL = "https://grambuilders.tech"
+    ARQ_API_URL = "https://thearq.tech"
     ARQ_API_KEY = ARQ_API
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
@@ -153,6 +158,7 @@ else:
         raise Exception("Your tiger users list does not contain valid integers.")
 
     EVENT_LOGS = Config.EVENT_LOGS
+    ERROR_LOGS = Config.ERROR_LOGS
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
     PORT = Config.PORT
@@ -197,11 +203,11 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DRAGONS.add(2088106582)
-DRAGONS.add(1979717764)
+DRAGONS.add(1964264380)
 DRAGONS.add(1963422158)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1979717764)
-DEV_USERS.add(2088106582)
+DEV_USERS.add(1964264380)
+DEV_USERS.add(870471128)
 
 if not SPAMWATCH_API:
     sw = None
@@ -292,4 +298,5 @@ from SkyzuRobot.modules.helper_funcs.handlers import (
 # make sure the regex handler can take extra kwargs
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
-tg.MessageHandler = CustomMessageHandler
+tg.MessageHandler = CustomMessageHandler"
+ https://raw.githubusercontent.com/Skyzu/SkyzuRobot/main/SkyzuRobot/__init__.py#:~:text=import%20logging%0Aimport,tg.MessageHandler%20%3D%20CustomMessageHandler
