@@ -447,7 +447,7 @@ def Skyzu_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=https:/'t.me/AkoUpdate"),
+                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="https://t.me/AkoUpdate"),
                     InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/projectsupdates"),
                  ],
                  [
