@@ -472,7 +472,7 @@ def Skyzu_about_callback(update, context):
             "\n✪ Sharing NSFW in Support Chat,will reward you GBAN and reported to Telegram as well."
             "\n\nFor any kind of help, related to this bot, Join @AkoUpdate."
             "\n\n_Terms & Conditions will be changed anytime_"
-            parse_mode=ParseMode.MARKDOWN,
+            parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
@@ -483,14 +483,13 @@ def Skyzu_about_callback(update, context):
             ),
         )   
 
-
     elif query.data == "credit_kanata"
         query.massage.edit_text(
             text=f<b> *Kanata Is A Powerful Bot For Managing Groups With Additional Features.*</b>\n
             "\n\nFork of [SkyzuRobot](https://github.com/Skyzu/SkyzuRobot)"
             "\n\n_Kanata's licensed under the GNU General Public License v3.0_"
             "\n\nIf Any Question About Asuna Yuuki, Let Us Know At @AkoUpdate."
-            parse_mode=ParseMode.HTML,
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back​", callback_data="credit_kanata")]]
             ),
