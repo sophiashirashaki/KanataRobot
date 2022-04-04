@@ -299,4 +299,3 @@ from SkyzuRobot.modules.helper_funcs.handlers import (
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
- https://raw.githubusercontent.com/Skyzu/SkyzuRobot/main/SkyzuRobot/__init__.py#:~:text=import%20logging%0Aimport,tg.MessageHandler%20%3D%20CustomMessageHandler
